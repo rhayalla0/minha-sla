@@ -9,7 +9,4 @@ const express = require("express");
  app.get("/",(req, res) => {
      res.sendFile(caminho.join(__dirname,"public","index.html"));
  });
- app.listen(porta,() => {
-     console.log("http://localhost:"+porta);
-
-# minha-sla
+ app.listen(porta,() => console.log("http://localhost:"+porta));
